@@ -160,7 +160,7 @@ const firebaseConfig = {
 
 // IMPORTANT: Replace this placeholder with the exact Gmail addresses allowed to use NEXA.
 // This client-side check improves the user experience; Firestore Rules must enforce the same allowlist.
-const ALLOWED_EMAILS = ["REPLACE_WITH_YOUR_GMAIL@gmail.com"];
+const ALLOWED_EMAILS = ["luongphamcongphuong@gmail.com"];
 function isAllowedEmail(email) {
   const allowed = ALLOWED_EMAILS.map(x => String(x).trim().toLowerCase())
     .filter(x => x && !x.includes("REPLACE_WITH_"));
