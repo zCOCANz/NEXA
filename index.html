@@ -415,11 +415,13 @@ window.nexaInitOneSignal = function() {
   window.nexaOneSignalInitStarted = true;
   window.OneSignalDeferred.push(async function(OneSignal) {
     try {
-      await OneSignal.init({
-        appId: window.NEXA_ONESIGNAL_APP_ID,
-        serviceWorkerPath: "OneSignalSDKWorker.js",
-        serviceWorkerParam: { scope: "./" }
-      });
+await OneSignal.init({
+  appId: window.NEXA_ONESIGNAL_APP_ID,
+  serviceWorkerPath: "/NEXA/OneSignalSDKWorker.js",
+  serviceWorkerParam: {
+    scope: "/NEXA/"
+  }
+});
       window.nexaOneSignalReady = true;
       window.nexaRefreshPushPanel();
       const status = document.getElementById('nexa-push-status');
