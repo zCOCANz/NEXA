@@ -1,0 +1,15 @@
+name = "nexa-reminder-worker"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["* * * * *"]
+
+# Secrets (do NOT put real values here):
+# FIREBASE_SERVICE_ACCOUNT_JSON
+# ONESIGNAL_REST_API_KEY
+# RUN_SECRET (optional)
+#
+# Vars can be set with:
+# wrangler secret put FIREBASE_PROJECT_ID
+# wrangler secret put ONESIGNAL_APP_ID
